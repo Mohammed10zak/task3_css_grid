@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: auto;
+    background-color: #222;
+}
+
+header {
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 340px;
+    grid-template-rows: 100px 40px 40px auto auto;
+    grid-template-areas:
+        "logo input nav"
+        ". nav_2 nav_2"
+        ". about about"
+        ". main ."
+        "footer footer footer"
+
+}
+
+.google_logo {
+    grid-area: logo;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+i {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.search-bar {
+    grid-area: input;
+    border: 1px solid #888;
+    margin-top: 16px;
+    margin-left: 10px;
+    padding: 12px;
+    width: 50%;
+    height: fit-content;
+    justify-content: space-around;
+    border-radius: 27px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+input {
+    width: 85%;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    align-content: center;
+}
+
+.search_img {
+    width: 25px;
+    height: 19px;
+    vertical-align: sub;
+}
+
+
+.nav_1 {
+    grid-area: nav;
+    margin-left: auto;
+
+}
+
+.nav_1 ul li {
+    margin-left: 22px;
+}
+
+.account_img {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+    margin-top: 16px;
+}
+
+.nav_2 {
+    grid-area: nav_2;
+}
+
+.nav_2 ul li a {
+    list-style: none;
+    text-decoration: none;
+    margin: 16px;
+    color: #999;
+
+}
+
+.about {
+    grid-area: about;
+    color: rgb(196, 191, 191);
+    margin-left: 10px;
+}
+
+
+.main {
+    grid-area: main;
+
+}
+
+.link_page a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+
+.link_page i {
+    margin-left: 30px;
+}
+
+.page a {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(78, 40, 194);
+}
+
+.page p {
+    margin-top: 12px;
+    color: #fff;
+    width: 75%;
+    margin-bottom: 26px;
+}
+
+
+.page_in {
+    margin: 24px;
+}
+
+.page_in a {
+    text-decoration: none;
+    color: rgb(78, 40, 194);
+}
+
+.page_in p {
+    margin-top: 12px;
+    color: #fff;
+    width: 75%;
+}
+
+
+.also_ask p {
+    margin: 24px;
+    color: #fff;
+}
+
+.also_ask i {
+    margin-left: 36px;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888;
+    background-color: #111;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(197, 191, 191);
+}
+
+.footer-1 a {
+    text-decoration: none;
+    margin: 15px;
+    display: inline;
+    color: #888;
+}
+
+.footer-2 a {
+    text-decoration: none;
+    margin: 15px;
+    display: inline;
+    color: #888;
+
+}
+
+.footer-1 a:hover {
+    border-bottom: 1px solid #888;
+
+}
+
+.footer-2 a:hover {
+    border-bottom: 1px solid #888;
+
+}
