@@ -13,13 +13,13 @@ header {
 
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px 1fr 340px;
+    grid-template-columns: 200px 1fr 600px;
     grid-template-rows: 100px 40px 40px auto auto;
     grid-template-areas:
         "logo input nav"
         ". nav_2 nav_2"
         ". about about"
-        ". main ."
+        ". main aside"
         "footer footer footer"
 
 }
@@ -48,7 +48,7 @@ ul li {
     margin-top: 16px;
     margin-left: 10px;
     padding: 12px;
-    width: 50%;
+    width: 75%;
     height: fit-content;
     justify-content: space-around;
     border-radius: 27px;
@@ -166,44 +166,66 @@ input {
     margin-left: 36px;
 }
 
+.aside {
+    grid-area: aside;
+    /* border: 1px solid #999; */
+    color: #fff;
+    margin: 20px;    
+
+}
+
+.info {
+    width: 70%;
+    color: #fff;
+    margin-top:10px;
+}
+
+.aside a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    margin-top: 10px;
+}
+
+
+.aside div {
+    margin-top: 10px;
+}
+
 .footer {
     grid-area: footer;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: #888;
     background-color: #111;
-
+    padding: 12px;
+    
 }
 
-.links {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.footer p {
+.footer span {
     font-size: 16px;
-    padding: 15px 20px;
-    border-bottom: 1px solid rgb(197, 191, 191);
+    padding: 12px;
+    display: inline-block;
+
+
 }
 
-.footer-1 a {
-    text-decoration: none;
-    margin: 15px;
-    display: inline;
-    color: #888;
-}
+.footer a {
+    /* margin-bottom: 70px; */
+    text-decoration: none ;
+    color: blueviolet;
 
+}
+.line {
+    border: 1px solid #999;
+}
 .footer-2 a {
     text-decoration: none;
-    margin: 15px;
+    margin-top: 20px;
     display: inline;
     color: #888;
-
-}
-
-.footer-1 a:hover {
-    border-bottom: 1px solid #888;
+    padding: 12px;
 
 }
 
