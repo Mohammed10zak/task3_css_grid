@@ -1,3 +1,4 @@
+/* global style */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,27 +10,31 @@ body {
     background-color: #222;
 }
 
-header {
+/* style of all page element with grid css */
+.container {
 
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 600px;
     grid-template-rows: 100px 40px 40px auto auto;
     grid-template-areas:
-        "logo input nav"
+        "logo input nav "
         ". nav_2 nav_2"
         ". about about"
         ". main aside"
+        "pagenation pagenation pagenation"
         "footer footer footer"
 
 }
 
+/* style of google logo */
 .google_logo {
     grid-area: logo;
     margin-top: 16px;
     margin-left: 10px;
 }
 
+/* style of search bar and input  */
 i {
     color: #fff;
 }
@@ -67,9 +72,9 @@ input {
     align-content: center;
 }
 
-.search_img {
-    width: 25px;
-    height: 19px;
+.Gdd5U {
+    width: 28px;
+    height: 32px;
     vertical-align: sub;
 }
 
@@ -77,7 +82,7 @@ input {
 .nav_1 {
     grid-area: nav;
     margin-left: auto;
-
+    margin-right: 22px;
 }
 
 .nav_1 ul li {
@@ -104,6 +109,7 @@ input {
 
 }
 
+/* style the main content */
 .about {
     grid-area: about;
     color: rgb(196, 191, 191);
@@ -166,18 +172,20 @@ input {
     margin-left: 36px;
 }
 
+/* style aside (react info) */
 .aside {
     grid-area: aside;
-    /* border: 1px solid #999; */
     color: #fff;
-    margin: 20px;    
+    border: 1px solid #999;
+    width: 500px;
+    height: 950px;
 
 }
 
 .info {
     width: 70%;
     color: #fff;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .aside a {
@@ -185,22 +193,59 @@ input {
     color: #fff;
     text-decoration: none;
     font-size: large;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
+.aside img {
+    width: 500px;
+}
+
+.prog_img {
+    margin-top: 30PX;
+}
+
+.aside div a {
+    display: inline;
+    margin: 26px;
+    color: blueviolet;
+}
 
 .aside div {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
+/* style pagenation google pages */
+.pagenation {
+    grid-area: pagenation;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.pagenation div {
+    font-size: 24px;
+}
+
+.pagenation p {
+    margin-top: 4px;
+    margin-left: 18px;
+}
+
+.pagenation p a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: large;
+    color: #fff;
+}
+
+/* style of footer */
 .footer {
     grid-area: footer;
-    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: #888;
     background-color: #111;
-    padding: 12px;
-    
+    padding: 24px;
+
 }
 
 .footer span {
@@ -212,14 +257,16 @@ input {
 }
 
 .footer a {
-    /* margin-bottom: 70px; */
-    text-decoration: none ;
+    text-decoration: none;
     color: blueviolet;
 
 }
+
 .line {
     border: 1px solid #999;
+    margin-bottom: 16px;
 }
+
 .footer-2 a {
     text-decoration: none;
     margin-top: 20px;
